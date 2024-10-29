@@ -19,3 +19,7 @@ class QuestionSerializer(serializers.ModelSerializer):
         model = Question
         fields = "__all__"
 
+
+class AnswerSerializer(serializers.Serializer):
+    question_id = serializers.IntegerField()
+    answer = serializers.ChoiceField(choices=['a', 'b', 'c', 'd'])
