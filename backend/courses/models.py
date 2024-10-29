@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Course(models.Model):
@@ -10,13 +11,14 @@ class Course(models.Model):
     def __str__(self):
         return self.title
 
+
 class Quiz(models.Model):
     name = models.CharField(max_length=255)
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         verbose_name = "Quiz"
-        verbose_name_plural = 'Quizes'
+        verbose_name_plural = "Quizes"
 
     def __str__(self):
         return self.name
@@ -34,6 +36,14 @@ class Question(models.Model):
     score_c = models.IntegerField(default=0)
     score_d = models.IntegerField(default=0)
 
-    class Meta:
-        verbose_name = 'Question'
-        verbose_name_plural = 'Questions'
+
+class QuizResult(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
+    score = models.IntegerField()
+    completed_date = models.DateTimeField(auto_now_add=True)
+
+
+class Meta:
+    verbose_name = "Question"
+    verbose_name_plural = "Questions"
