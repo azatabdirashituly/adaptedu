@@ -1,0 +1,38 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$8CrGWnnneJCMA4qcEuTPcE$/IAKezK6vtA/kXKxc50u4SmmfrRX33BKqaeWTswj7fk=",
+    "last_login": "2024-10-12T18:32:25.181Z",
+    "is_superuser": true,
+    "username": "azatm",
+    "first_name": "",
+    "last_name": "",
+    "email": "azatabdirashituly@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-10-12T18:03:15.006Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$5PpzZnPSNxZqbzAz7vQWv6$FWHrUSP8FQMwMYQhPo2wwn0IoSQ4IFD/4e4j6OA+r/s=",
+    "last_login": "2024-10-29T15:07:49.525Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.kz",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-10-29T15:07:41.337Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

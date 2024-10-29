@@ -1,0 +1,226 @@
+[
+    {
+        "model": "courses.course",
+        "pk": 1,
+        "fields": {
+            "title": "Math",
+            "image": "courses/images/math_VStKsSq.jpg",
+            "description": "Mathematics is a field of study that discovers and organizes methods, theories and theorems that are developed and proved for the needs of empirical sciences and mathematics itself.",
+            "duration": "1 hour"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 2,
+        "fields": {
+            "title": "Biology",
+            "image": "courses/images/biology.jpg",
+            "description": "Biology is a branch of science that deals with living organisms and their vital processes",
+            "duration": "1 hour"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 3,
+        "fields": {
+            "title": "History of Kazakhstan",
+            "image": "courses/images/history.jpg",
+            "description": "Kazakhstan has been inhabited since the Paleolithic era. In antiquity, various nomadic Iranian peoples such as the Saka, Massagetae, and Scythians dominated the territory, with the Achaemenid Persian Empire expanding towards the southern region.",
+            "duration": "2 hours"
+        }
+    },
+    {
+        "model": "courses.course",
+        "pk": 4,
+        "fields": {
+            "title": "English",
+            "image": "courses/images/06-English.jpg",
+            "description": "English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones, originated in early medieval England on the island of Great Britain.",
+            "duration": "1 hour 30 min"
+        }
+    },
+    {
+        "model": "courses.quiz",
+        "pk": 1,
+        "fields": {
+            "name": "Elementary Quiz",
+            "course": 4
+        }
+    },
+    {
+        "model": "courses.quiz",
+        "pk": 2,
+        "fields": {
+            "name": "Medium Quiz",
+            "course": 4
+        }
+    },
+    {
+        "model": "courses.quiz",
+        "pk": 3,
+        "fields": {
+            "name": "Intermediate Quiz",
+            "course": 4
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 1,
+        "fields": {
+            "text": "What is the capital of the United States?",
+            "quiz": 1,
+            "option_a": "New York",
+            "option_b": "Washington, D.C.",
+            "option_c": "Los Angeles",
+            "option_d": "Chicago",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 2,
+        "fields": {
+            "text": "Which word is a synonym for \"happy\"?",
+            "quiz": 1,
+            "option_a": "Sad",
+            "option_b": "Joyful",
+            "option_c": "Angry",
+            "option_d": "Tired",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 3,
+        "fields": {
+            "text": "What is the opposite of \"hot\"?",
+            "quiz": 1,
+            "option_a": "Warm",
+            "option_b": "Cool",
+            "option_c": "Cool",
+            "option_d": "Temperate",
+            "score_a": 0,
+            "score_b": 0,
+            "score_c": 1,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 4,
+        "fields": {
+            "text": "Which sentence is correct?",
+            "quiz": 1,
+            "option_a": "He go to school",
+            "option_b": "He goes to school",
+            "option_c": "He gone to school",
+            "option_d": "He going to school",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 5,
+        "fields": {
+            "text": "What does \"apple\" refer to",
+            "quiz": 1,
+            "option_a": "A color",
+            "option_b": "A fruit",
+            "option_c": "A vegetable",
+            "option_d": "A type of animal",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 6,
+        "fields": {
+            "text": "Which word is a verb",
+            "quiz": 1,
+            "option_a": "Quick",
+            "option_b": "Run",
+            "option_c": "Beautiful",
+            "option_d": "Slowly",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 7,
+        "fields": {
+            "text": "How do you say \"thank you\" in Spanish",
+            "quiz": 1,
+            "option_a": "Merci",
+            "option_b": "Gracias",
+            "option_c": "Danke",
+            "option_d": "Arigato",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 8,
+        "fields": {
+            "text": "What is the plural of \"child\"?",
+            "quiz": 1,
+            "option_a": "Childs",
+            "option_b": "Children",
+            "option_c": "Childes",
+            "option_d": "Childrens",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 9,
+        "fields": {
+            "text": "Which word completes the sentence: \"She _____ a book.\"?",
+            "quiz": 1,
+            "option_a": "Read",
+            "option_b": "Reads",
+            "option_c": "Reading",
+            "option_d": "Reader",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    },
+    {
+        "model": "courses.question",
+        "pk": 10,
+        "fields": {
+            "text": "What is the main color of the sky on a clear day?",
+            "quiz": 1,
+            "option_a": "Green",
+            "option_b": "Blue",
+            "option_c": "Red",
+            "option_d": "Yellow",
+            "score_a": 0,
+            "score_b": 1,
+            "score_c": 0,
+            "score_d": 0
+        }
+    }
+]

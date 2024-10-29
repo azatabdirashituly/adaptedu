@@ -18,6 +18,9 @@ class Quiz(models.Model):
         verbose_name = "Quiz"
         verbose_name_plural = 'Quizes'
 
+    def __str__(self):
+        return self.name
+
 
 class Question(models.Model):
     text = models.CharField(max_length=255)
